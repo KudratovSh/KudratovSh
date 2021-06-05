@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    text-decoration: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    background-color: black;
+    color: white;
+    border-color: transparent;
+    height: 50px;
+    width: 200px;
+}
+#calculator {
+    width: 325px;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 20px 9px;
+    position: relative;
+    background: black;
+    border-radius: 13px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top button.clear {
+    position: absolute;
+    z-index: 6;
+}
+
+.top .screen {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 40px;
+    color: white;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.keys,
+.top {
+    overflow: hidden;
+}
+
+.keys button,
+.top button.clear {
+    float: left;
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 56px;
+    background: grey;
+    border-radius: 110px;
+    margin: 0 7px 11px 0;
+    color: white;
+    line-height: 56px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+    font-size: 30px;
+    border-color: transparent;
+}
+
+.keys button.operator {
+    background: orange;
+    margin-right: 0;
+}
+
+.keys button.eval {
+    color: white;
+    background-color: orange;
+}
+
+.top button.clear {
+    background: grey;
+    box-shadow: none;
+    color: white;
+    width: 60px;
+    left: 0px
+}
